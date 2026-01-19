@@ -1,0 +1,57 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Instagram, Facebook, Mail, MapPin, Phone } from 'lucide-react';
+import styles from './Footer.module.css';
+
+const Footer = () => {
+    return (
+        <footer className={styles.footer}>
+            <div className={`container ${styles.footerContainer}`}>
+
+                {/* Brand Section */}
+                <div className={styles.brandSection}>
+                    <h2 className={styles.logo}>Fancy Creations</h2>
+                    <p className={styles.tagline}>Handcrafted Elegance in Every Stitch.</p>
+                    <div className={styles.socials}>
+                        <a href="#" className={styles.socialIcon}><Instagram size={20} /></a>
+                        <a href="#" className={styles.socialIcon}><Facebook size={20} /></a>
+                    </div>
+                </div>
+
+                {/* Links Section */}
+                <div className={styles.linksSection}>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/works">Our Works</Link></li>
+                        <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                    </ul>
+                </div>
+
+                {/* Contact Section */}
+                <div className={styles.contactSection}>
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <Phone size={16} /> <span>+91 77085 52461</span>
+                        </li>
+                        <li>
+                            <Mail size={16} /> <span>contact@fancycreations.com</span>
+                        </li>
+                        <li>
+                            <MapPin size={16} /> <span>123, Boutique Street, Fashion City.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className={styles.copyright}>
+                <p>&copy; {new Date().getFullYear()} Fancy Creations. All rights reserved.</p>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;

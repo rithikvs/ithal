@@ -1,0 +1,82 @@
+.pageHeader {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 6rem 0 3rem;
+    text-align: center;
+}
+
+.pageHeader h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.serviceCard {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.imageContainer {
+    height: 200px;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.serviceCard:hover .imageContainer img {
+    transform: scale(1.1);
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.content h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-family: var(--font-heading);
+}
+
+.content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.features {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.4rem;
+}
+
+.features li svg {
+    color: var(--color-secondary);
+}

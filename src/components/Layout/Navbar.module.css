@@ -1,0 +1,189 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    transition: all 0.4s ease;
+    background-color: transparent;
+}
+
+.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Desktop Menu */
+.desktopMenu {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navLink {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    position: relative;
+    transition: color 0.3s;
+}
+
+
+/* Make hover more visible on pink backgrounds */
+.navLink:hover,
+.navLink.active {
+    color: #fff;
+    background: rgba(160, 90, 101, 0.85); /* Stronger contrast for pink */
+    border-radius: 6px;
+    z-index: 1;
+}
+
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.navBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(183, 110, 121, 0.3);
+}
+
+.navBtn:hover {
+    background-color: #a05a65;
+    transform: translateY(-2px);
+}
+
+/* Mobile Toggle */
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-text-dark);
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobileMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.mobileMenu ul {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.mobileLink {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    text-align: center;
+    position: relative;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 6px;
+}
+
+.mobileLink:hover,
+.mobileLink.active {
+    color: #fff;
+    background: rgba(160, 90, 101, 0.85);
+    z-index: 1;
+}
+
+.mobileLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 6px;
+    left: 20%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+}
+
+.mobileLink:hover::after,
+.mobileLink.active::after {
+    width: 60%;
+    opacity: 1;
+}
+
+.mobileBtn {
+    display: block;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .desktopMenu {
+        display: none;
+    }
+
+    .menuToggle {
+        display: block;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+}

@@ -1,0 +1,57 @@
+.pageHeader {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 6rem 0 3rem;
+    text-align: center;
+}
+
+.pageHeader h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+}
+
+.storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.storyImage img {
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.storyContent h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+.storyContent p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-dark);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.missionSection {
+    background-color: var(--color-secondary);
+    padding: 5rem 0;
+    color: var(--color-text-dark);
+}
+
+.missionText {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-style: italic;
+    max-width: 800px;
+    margin: 2rem auto 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .storyGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
