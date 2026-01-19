@@ -1,0 +1,6 @@
+// vercel.json for Vercel deployment
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
