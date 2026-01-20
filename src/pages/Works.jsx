@@ -4,32 +4,90 @@ import { X, ZoomIn, ShoppingBag } from 'lucide-react';
 import styles from './Works.module.css';
 import Button from '../components/UI/Button';
 
-// Import local images
-import image1 from '../assets/images/001.jpg';
-import image2 from '../assets/images/002.jpg';
-import image3 from '../assets/images/003.jpg';
 
-const categories = ["All", "Aari Work", "Bridal Works", "Brooch Work", "Blouse Designs", "Tailoring Designs"];
+// Import all aari images
+import aari1 from '../assets/images/aari/aari1.jpg';
+import aari2 from '../assets/images/aari/aari2.jpg';
+import aari3 from '../assets/images/aari/aari3.jpg';
+import aari4 from '../assets/images/aari/aari4.jpg';
+import aari5 from '../assets/images/aari/aari5.jpg';
+import aari6 from '../assets/images/aari/aari6.jpg';
+import aari7 from '../assets/images/aari/aari7.jpg';
+import aari8 from '../assets/images/aari/aari8.jpg';
+import aari9 from '../assets/images/aari/aari9.jpg';
+import aari10 from '../assets/images/aari/aari10.jpg';
+import aari11 from '../assets/images/aari/aari11.jpg';
+import aari12 from '../assets/images/aari/aari12.jpg';
+import aari13 from '../assets/images/aari/aari13.jpg';
+import aari14 from '../assets/images/aari/aari14.jpg';
+import aari15 from '../assets/images/aari/aari15.jpg';
+import brooch1 from '../assets/images/brooch/1.jpeg';
+import brooch2 from '../assets/images/brooch/2.jpeg';
+import brooch3 from '../assets/images/brooch/3.jpeg';
+import brooch4 from '../assets/images/brooch/4.jpeg';
+import brooch5 from '../assets/images/brooch/5.jpeg';
+import brooch6 from '../assets/images/brooch/6.jpeg';
+import brooch7 from '../assets/images/brooch/7.jpeg';
+import brooch8 from '../assets/images/brooch/8.jpeg';
+import brooch9 from '../assets/images/brooch/9.jpeg';
+import brooch10 from '../assets/images/brooch/10.jpeg';
+import brooch11 from '../assets/images/brooch/11.jpeg';
+import fabric1 from '../assets/images/fabric/1.jpg';
+import fabric2 from '../assets/images/fabric/2.jpg';
+import fabric3 from '../assets/images/fabric/3.jpg';
+import fabric4 from '../assets/images/fabric/4.jpg';
+import fabric5 from '../assets/images/fabric/5.jpg';
+import fabric6 from '../assets/images/fabric/6.jpg';
+
+const categories = ["Aari Work", "Brooch Work", "Fabric Paint"];
 
 const worksData = [
-    { id: 1, category: "Aari Work", image: image1, title: "Floral Aari Design" },
-    { id: 2, category: "Bridal Works", image: image2, title: "Red Bridal Blouse" },
-    { id: 3, category: "Brooch Work", image: image3, title: "Custom Gold Brooch" },
-    { id: 4, category: "Tailoring Designs", image: image2, title: "Perfect Fit Salwar" },
-    { id: 5, category: "Aari Work", image: image1, title: "Peacock Motif" },
-    { id: 6, category: "Blouse Designs", image: image2, title: "Designer Back Neck" },
+    // Aari Work images
+    { id: 1, category: "Aari Work", image: aari1, title: "Aari Work" },
+    { id: 2, category: "Aari Work", image: aari2, title: "Aari Work" },
+    { id: 3, category: "Aari Work", image: aari3, title: "Aari Work" },
+    { id: 4, category: "Aari Work", image: aari4, title: "Aari Work" },
+    { id: 5, category: "Aari Work", image: aari5, title: "Aari Work" },
+    { id: 6, category: "Aari Work", image: aari6, title: "Aari Work" },
+    { id: 7, category: "Aari Work", image: aari7, title: "Aari Work" },
+    { id: 8, category: "Aari Work", image: aari8, title: "Aari Work" },
+    { id: 9, category: "Aari Work", image: aari9, title: "Aari Work" },
+    { id: 10, category: "Aari Work", image: aari10, title: "Aari Work" },
+    { id: 11, category: "Aari Work", image: aari11, title: "Aari Work" },
+    { id: 12, category: "Aari Work", image: aari12, title: "Aari Work" },
+    { id: 13, category: "Aari Work", image: aari13, title: "Aari Work" },
+    { id: 14, category: "Aari Work", image: aari14, title: "Aari Work" },
+    { id: 15, category: "Aari Work", image: aari15, title: "Aari Work" },
+    // Brooch Work
+    { id: 16, category: "Brooch Work", image: brooch1, title: "Brooch Work" },
+    { id: 17, category: "Brooch Work", image: brooch2, title: "Brooch Work" },
+    { id: 18, category: "Brooch Work", image: brooch3, title: "Brooch Work" },
+    { id: 19, category: "Brooch Work", image: brooch4, title: "Brooch Work" },
+    { id: 20, category: "Brooch Work", image: brooch5, title: "Brooch Work" },
+    { id: 21, category: "Brooch Work", image: brooch6, title: "Brooch Work" },
+    { id: 22, category: "Brooch Work", image: brooch7, title: "Brooch Work" },
+    { id: 23, category: "Brooch Work", image: brooch8, title: "Brooch Work" },
+    { id: 24, category: "Brooch Work", image: brooch9, title: "Brooch Work" },
+    { id: 25, category: "Brooch Work", image: brooch10, title: "Brooch Work" },
+    { id: 26, category: "Brooch Work", image: brooch11, title: "Brooch Work" },
+    // Fabric Paint
+    { id: 17, category: "Fabric Paint", image: fabric1, title: "Fabric Paint" },
+    { id: 18, category: "Fabric Paint", image: fabric2, title: "Fabric Paint" },
+    { id: 19, category: "Fabric Paint", image: fabric3, title: "Fabric Paint" },
+    { id: 20, category: "Fabric Paint", image: fabric4, title: "Fabric Paint" },
+    { id: 21, category: "Fabric Paint", image: fabric5, title: "Fabric Paint" },
+    { id: 22, category: "Fabric Paint", image: fabric6, title: "Fabric Paint" },
+    
 ];
 
 const Works = () => {
     const [activeCategory, setActiveCategory] = useState("All");
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const filteredWorks = activeCategory === "All"
-        ? worksData
-        : worksData.filter(work => work.category === activeCategory);
+    const filteredWorks = worksData.filter(work => work.category === activeCategory);
 
     const whatsappLink = (title) => {
-        const text = `Hello Fancy Creations, I am interested in this design: ${title}`;
+        const text = `Hello Ithal Creations, I am interested in this design: ${title}`;
         return `https://wa.me/917708552461?text=${encodeURIComponent(text)}`;
     };
 

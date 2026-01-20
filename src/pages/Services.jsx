@@ -3,36 +3,31 @@ import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 import styles from './Services.module.css';
 
-import image1 from '../assets/images/001.jpg';
-import image2 from '../assets/images/002.jpg';
-import image3 from '../assets/images/003.jpg';
+import imageAari from '../assets/images/aari.jpg';
+import imageBrooch from '../assets/images/brooch.jpg';
+import imageFabric from '../assets/images/fabric/1.jpg';
 import Button from '../components/UI/Button';
     // Helper to generate WhatsApp Web link
     const whatsappLink = (title) => {
-        const text = `Hello Fancy Creations, I am interested in this service: ${title}`;
+        const text = `Hello Ithal Creations, I am interested in this service: ${title}`;
         return `https://web.whatsapp.com/send?phone=7708552461&text=${encodeURIComponent(text)}`;
     };
 
 const servicesList = [
     {
-        title: "Aari Embroidery",
-        description: "Intricate hand embroidery using beads, stones, and threads to create stunning bridal designs.",
-        image: image1
+        title: "Aari Work",
+        description: "Intricate hand embroidery using beads, stones, and threads to create stunning designs.",
+        image: imageAari
     },
     {
-        title: "Bridal Tailoring",
-        description: "Perfectly fitted bridal blouses and lehengas customized to your measurements and style.",
-        image: image2
-    },
-    {
-        title: "Brooch Designing",
+        title: "Brooch Work",
         description: "Handmade customized brooches to add an elegant touch to your sarees and outfits.",
-        image: image3
+        image: imageBrooch
     },
     {
-        title: "Pattern Making",
-        description: "Expert pattern drafting for contemporary and traditional cuts.",
-        image: image1 // Reuse image1 as a placeholder
+        title: "Fabric Paint",
+        description: "Beautiful fabric painting to enhance your garments with unique art.",
+        image: imageFabric
     }
 ];
 

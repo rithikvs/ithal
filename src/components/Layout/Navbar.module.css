@@ -1,179 +1,175 @@
+/* ===========================
+   NAVBAR BASE
+=========================== */
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1.5rem 0;
-    transition: all 0.4s ease;
-    background-color: transparent;
+    padding: 1rem 0;
+    background: linear-gradient(90deg, #ffffff 60%, #f7e6ea 100%);
+    box-shadow: 0 2px 14px rgba(160, 90, 101, 0.08);
+    border-bottom: 1px solid #f3dbe2;
+    transition: all 0.35s ease;
 }
 
 .scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 1rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(10px);
+    padding: 0.6rem 0;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 22px rgba(160, 90, 101, 0.12);
 }
+
+/* ===========================
+   CONTAINER
+=========================== */
 
 .navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    flex-direction: row;
 }
+
+
+/* ===========================
+   LOGO
+=========================== */
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 800;
+    color: #a05a65;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    left: 0;
 }
 
-/* Desktop Menu */
+/* ===========================
+   DESKTOP MENU
+=========================== */
+
 .desktopMenu {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
 }
+
+/* ===========================
+   NAV LINKS (NEAT HOVER)
+=========================== */
 
 .navLink {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--color-text-dark);
     position: relative;
-    transition: color 0.3s;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #a05a65;
+    text-decoration: none;
+    padding: 0.4rem 0.2rem;
+    transition: color 0.25s ease;
 }
 
+/* underline animation */
+.navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2.5px;
+    background: linear-gradient(90deg, #a05a65, #e7bfc7);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
 
-/* Make hover more visible on pink backgrounds */
+/* hover effect */
 .navLink:hover,
 .navLink.active {
-    color: #fff;
-    background: rgba(160, 90, 101, 0.85); /* Stronger contrast for pink */
-    border-radius: 6px;
-    z-index: 1;
-}
-
-
-.navLink::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: -6px;
-    left: 0;
-    background-color: #fff;
-    border-radius: 2px;
-    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 1;
+    color: #7e3f49;
 }
 
 .navLink:hover::after,
 .navLink.active::after {
     width: 100%;
-    opacity: 1;
 }
 
+/* ===========================
+   NAV BUTTON
+=========================== */
+
 .navBtn {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.5rem;
-    background-color: var(--color-primary);
+    margin-left: 1.5rem;
+    padding: 0.6rem 1.4rem;
+    background: #a05a65;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 30px;
     font-size: 0.9rem;
-    font-weight: 500;
-    transition: transform 0.2s, background-color 0.3s;
-    box-shadow: 0 4px 10px rgba(183, 110, 121, 0.3);
+    font-weight: 600;
+    transition: background 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 4px 10px rgba(160, 90, 101, 0.25);
 }
 
 .navBtn:hover {
-    background-color: #a05a65;
-    transform: translateY(-2px);
+    background: #7e3f49;
+    transform: translateY(-1px);
 }
 
-/* Mobile Toggle */
+/* ===========================
+   MOBILE
+=========================== */
+
 .menuToggle {
     display: none;
     background: none;
     border: none;
-    color: var(--color-text-dark);
     cursor: pointer;
 }
 
-/* Mobile Menu */
 .mobileMenu {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    background: #fff;
     border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
 .mobileMenu ul {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
-
 .mobileLink {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-text-dark);
     text-align: center;
-    position: relative;
-    transition: color 0.3s, background 0.3s;
+    font-size: 1.05rem;
+    color: #a05a65;
+    padding: 0.6rem;
     border-radius: 6px;
+    transition: background 0.25s ease, color 0.25s ease;
 }
 
 .mobileLink:hover,
 .mobileLink.active {
+    background: #a05a65;
     color: #fff;
-    background: rgba(160, 90, 101, 0.85);
-    z-index: 1;
 }
 
-.mobileLink::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: 6px;
-    left: 20%;
-    background-color: #fff;
-    border-radius: 2px;
-    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 1;
-}
+/* ===========================
+   RESPONSIVE
+=========================== */
 
-.mobileLink:hover::after,
-.mobileLink.active::after {
-    width: 60%;
-    opacity: 1;
-}
-
-.mobileBtn {
-    display: block;
-    text-align: center;
-    background-color: var(--color-primary);
-    color: #fff;
-    padding: 0.8rem;
-    border-radius: 8px;
-    font-weight: 600;
-}
-
-/* Responsive */
 @media (max-width: 900px) {
     .desktopMenu {
         display: none;

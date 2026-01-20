@@ -34,7 +34,7 @@ const Navbar = () => {
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={`container ${styles.navContainer}`}>
                 <Link to="/" className={styles.logo}>
-                    Fancy Creations
+                    Ithal Creations
                 </Link>
 
                 {/* Desktop Menu */}

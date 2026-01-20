@@ -1,11 +1,11 @@
 @import './styles/variables.css';
-
 /* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+ 
 
 body {
   font-family: var(--font-body);
@@ -63,7 +63,21 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-sm);
+  width: 100%;
+  box-sizing: border-box;
 }
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    min-width: 0;
+  }
+}
+
 
 .btn {
   display: inline-flex;
