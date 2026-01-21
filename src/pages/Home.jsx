@@ -58,10 +58,10 @@ const Home = () => {
                         >
                             <img src={logoImg} alt="Logo" className={styles.logoImg} />
                         </motion.div>
-                        <h2 className="section-title text-center">Welcome to Ithal Creations</h2>
+                        <h2 className="section-title text-center">Welcome to Ethal Creations</h2>
                         <p className="section-subtitle text-center">Where tradition meets modern fashion</p>
                         <p className={styles.introText}>
-                            At Ithal Creations, we specialize in bringing your dream outfits to life.
+                            At Ethal Creations, we specialize in bringing your dream outfits to life.
                             From intricate Aari embroidery to perfect-fit bridal blouses, our passion
                             is to make you look your best on your special days.
                         </p>

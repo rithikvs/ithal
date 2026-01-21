@@ -7,11 +7,11 @@ import imageAari from '../assets/images/aari.jpg';
 import imageBrooch from '../assets/images/brooch.jpg';
 import imageFabric from '../assets/images/fabric/1.jpg';
 import Button from '../components/UI/Button';
-    // Helper to generate WhatsApp Web link
-    const whatsappLink = (title) => {
-        const text = `Hello Ithal Creations, I am interested in this service: ${title}`;
-        return `https://web.whatsapp.com/send?phone=7708552461&text=${encodeURIComponent(text)}`;
-    };
+// Helper to generate WhatsApp chat link (mobile-friendly)
+const whatsappLink = (title) => {
+    const text = `Hello Ethal Creations, I am interested in this service: ${title}`;
+    return `https://wa.me/917708552461?text=${encodeURIComponent(text)}`;
+};
 
 const servicesList = [
     {

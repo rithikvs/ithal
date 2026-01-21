@@ -13,7 +13,7 @@ const About = () => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.6 }}
                     >
-                        About Ithal Creations
+                        About Ethal Creations
                     </motion.h1>
                 </div>
             </div>
@@ -28,7 +28,7 @@ const About = () => {
                         <div className={styles.storyContent} data-aos="fade-left">
                             <h2 className="section-title">Our Story</h2>
                             <p>
-                                Founded with a passion for intricate craftsmanship, Ithal Creations has been serving fashion enthusiasts with bespoke designs and high-quality stitching. We believe that every piece of clothing tells a story, and we are here to help you write yours.
+                                Founded with a passion for intricate craftsmanship, Ethal Creations has been serving fashion enthusiasts with bespoke designs and high-quality stitching. We believe that every piece of clothing tells a story, and we are here to help you write yours.
                             </p>
                             <p>
                                 From humble beginnings to a boutique brand known for its Aari work and bridal blouses, our journey has been driven by customer satisfaction and artistic excellence.

@@ -87,7 +87,7 @@ const Works = () => {
     const filteredWorks = worksData.filter(work => work.category === activeCategory);
 
     const whatsappLink = (title) => {
-        const text = `Hello Ithal Creations, I am interested in this design: ${title}`;
+        const text = `Hello Ethal Creations, I am interested in this design: ${title}`;
         return `https://wa.me/917708552461?text=${encodeURIComponent(text)}`;
     };
 
@@ -180,9 +180,14 @@ const Works = () => {
                             <img src={selectedImage.image} alt={selectedImage.title} />
                             <div className={styles.lightboxDetails}>
                                 <h2>{selectedImage.title}</h2>
-                                <a href={whatsappLink(selectedImage.title)} target="_blank" rel="noopener noreferrer">
-                                    <Button variant="primary">Order Now</Button>
-                                </a>
+                                <Button 
+                                    variant="primary"
+                                    href={whatsappLink(selectedImage.title)}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Order Now
+                                </Button>
                             </div>
                         </motion.div>
                     </motion.div>

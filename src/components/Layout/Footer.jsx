@@ -10,7 +10,7 @@ const Footer = () => {
 
                 {/* Brand Section */}
                 <div className={styles.brandSection}>
-                    <h2 className={styles.logo}>Ithal Creations</h2>
+                    <h2 className={styles.logo}>Ethal Creations</h2>
                     <p className={styles.tagline}>Handcrafted Elegance in Every Stitch.</p>
                     <div className={styles.socials}>
                         <a href="#" className={styles.socialIcon}><Instagram size={20} /></a>
@@ -38,7 +38,7 @@ const Footer = () => {
                             <Phone size={16} /> <span>+91 77085 52461</span>
                         </li>
                         <li>
-                            <Mail size={16} /> <span>contact@Ithalcreations.com</span>
+                            <Mail size={16} /> <span>contact@Ethalcreations.com</span>
                         </li>
                         <li>
                             <MapPin size={16} /> <span>123, Boutique Street, Fashion City.</span>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.copyright}>
-                <p>&copy; {new Date().getFullYear()} Ithal Creations. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Ethal Creations. All rights reserved.</p>
             </div>
         </footer>
     );

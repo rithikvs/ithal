@@ -46,7 +46,7 @@ const Contact = () => {
                                 <div className={styles.iconBox}><Mail size={24} /></div>
                                 <div>
                                     <h3>Email</h3>
-                                    <p>contact@Ithalcreations.com</p>
+                                    <p>contact@Ethalcreations.com</p>
                                 </div>
                             </div>
 

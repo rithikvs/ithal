@@ -67,7 +67,7 @@ const Order = () => {
                         <Button
                             variant="primary"
                             style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}
-                            href="https://wa.me/917708552461?text=Hello%20Ithal%20Creations,%20I%20would%20like%20to%20place%20an%20order."
+                            href="https://wa.me/917708552461?text=Hello%20Ethal%20Creations,%20I%20would%20like%20to%20place%20an%20order."
                             target="_blank"
                             rel="noopener noreferrer"
                         >
