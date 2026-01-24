@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -11,10 +11,10 @@ const Footer = () => {
                 {/* Brand Section */}
                 <div className={styles.brandSection}>
                     <h2 className={styles.logo}>Ethal Creations</h2>
-                    <p className={styles.tagline}>Handcrafted Elegance in Every Stitch.</p>
+                    <p className={styles.tagline}>Handcrafted Elegance in Every Stitch.<br />
+                    <span style={{fontWeight: 500}}>Courier service available to and from your location.</span></p>
                     <div className={styles.socials}>
-                        <a href="#" className={styles.socialIcon}><Instagram size={20} /></a>
-                        <a href="#" className={styles.socialIcon}><Facebook size={20} /></a>
+                        <a href="https://www.instagram.com/ethalya_rubini/" className={styles.socialIcon} target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
                             <Phone size={16} /> <span>+91 77085 52461</span>
                         </li>
                         <li>
-                            <Mail size={16} /> <span>contact@Ethalcreations.com</span>
+                            <Mail size={16} /> <span>indhugopi2007@gmail.com</span>
                         </li>
                         <li>
                             <MapPin size={16} /> <span>123, Boutique Street, Fashion City.</span>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.copyright}>
-                <p>&copy; {new Date().getFullYear()} Ethal Creations. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Ethal Creations.Explore more and order more ❤️.</p>
             </div>
         </footer>
     );

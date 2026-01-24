@@ -28,12 +28,15 @@
 
 .socials {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .socialIcon {
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
@@ -41,11 +44,17 @@
     justify-content: center;
     transition: all 0.3s ease;
     color: #fff;
+    font-size: 2.2rem;
+}
+
+.socialIcon svg {
+    width: 40px;
+    height: 40px;
 }
 
 .socialIcon:hover {
     background-color: var(--color-primary);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.08);
 }
 
 .linksSection h3,

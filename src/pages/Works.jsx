@@ -81,7 +81,7 @@ const worksData = [
 ];
 
 const Works = () => {
-    const [activeCategory, setActiveCategory] = useState("All");
+    const [activeCategory, setActiveCategory] = useState("Aari Work");
     const [selectedImage, setSelectedImage] = useState(null);
 
     const filteredWorks = worksData.filter(work => work.category === activeCategory);
