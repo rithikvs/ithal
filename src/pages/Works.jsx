@@ -43,40 +43,40 @@ const categories = ["Aari Work", "Brooch Work", "Fabric Paint"];
 
 const worksData = [
     // Aari Work images
-    { id: 1, category: "Aari Work", image: aari1, title: "Aari Work" },
-    { id: 2, category: "Aari Work", image: aari2, title: "Aari Work" },
-    { id: 3, category: "Aari Work", image: aari3, title: "Aari Work" },
-    { id: 4, category: "Aari Work", image: aari4, title: "Aari Work" },
-    { id: 5, category: "Aari Work", image: aari5, title: "Aari Work" },
-    { id: 6, category: "Aari Work", image: aari6, title: "Aari Work" },
-    { id: 7, category: "Aari Work", image: aari7, title: "Aari Work" },
-    { id: 8, category: "Aari Work", image: aari8, title: "Aari Work" },
-    { id: 9, category: "Aari Work", image: aari9, title: "Aari Work" },
-    { id: 10, category: "Aari Work", image: aari10, title: "Aari Work" },
-    { id: 11, category: "Aari Work", image: aari11, title: "Aari Work" },
-    { id: 12, category: "Aari Work", image: aari12, title: "Aari Work" },
-    { id: 13, category: "Aari Work", image: aari13, title: "Aari Work" },
-    { id: 14, category: "Aari Work", image: aari14, title: "Aari Work" },
-    { id: 15, category: "Aari Work", image: aari15, title: "Aari Work" },
+    { id: 1, category: "Aari Work", image: aari1, title: "Aari Work 1" },
+    { id: 2, category: "Aari Work", image: aari2, title: "Aari Work 2" },
+    { id: 3, category: "Aari Work", image: aari3, title: "Aari Work 3" },
+    { id: 4, category: "Aari Work", image: aari4, title: "Aari Work 4" },
+    { id: 5, category: "Aari Work", image: aari5, title: "Aari Work 5" },
+    { id: 6, category: "Aari Work", image: aari6, title: "Aari Work 6" },
+    { id: 7, category: "Aari Work", image: aari7, title: "Aari Work 7" },
+    { id: 8, category: "Aari Work", image: aari8, title: "Aari Work 8" },
+    { id: 9, category: "Aari Work", image: aari9, title: "Aari Work 9" },
+    { id: 10, category: "Aari Work", image: aari10, title: "Aari Work 10" },
+    { id: 11, category: "Aari Work", image: aari11, title: "Aari Work 11" },
+    { id: 12, category: "Aari Work", image: aari12, title: "Aari Work 12" },
+    { id: 13, category: "Aari Work", image: aari13, title: "Aari Work 13" },
+    { id: 14, category: "Aari Work", image: aari14, title: "Aari Work 14" },
+    { id: 15, category: "Aari Work", image: aari15, title: "Aari Work 15" },
     // Brooch Work
-    { id: 16, category: "Brooch Work", image: brooch1, title: "Brooch Work" },
-    { id: 17, category: "Brooch Work", image: brooch2, title: "Brooch Work" },
-    { id: 18, category: "Brooch Work", image: brooch3, title: "Brooch Work" },
-    { id: 19, category: "Brooch Work", image: brooch4, title: "Brooch Work" },
-    { id: 20, category: "Brooch Work", image: brooch5, title: "Brooch Work" },
-    { id: 21, category: "Brooch Work", image: brooch6, title: "Brooch Work" },
-    { id: 22, category: "Brooch Work", image: brooch7, title: "Brooch Work" },
-    { id: 23, category: "Brooch Work", image: brooch8, title: "Brooch Work" },
-    { id: 24, category: "Brooch Work", image: brooch9, title: "Brooch Work" },
-    { id: 25, category: "Brooch Work", image: brooch10, title: "Brooch Work" },
-    { id: 26, category: "Brooch Work", image: brooch11, title: "Brooch Work" },
+    { id: 16, category: "Brooch Work", image: brooch1, title: "Brooch Work 1" },
+    { id: 17, category: "Brooch Work", image: brooch2, title: "Brooch Work 2" },
+    { id: 18, category: "Brooch Work", image: brooch3, title: "Brooch Work 3" },
+    { id: 19, category: "Brooch Work", image: brooch4, title: "Brooch Work 4" },
+    { id: 20, category: "Brooch Work", image: brooch5, title: "Brooch Work 5" },
+    { id: 21, category: "Brooch Work", image: brooch6, title: "Brooch Work 6" },
+    { id: 22, category: "Brooch Work", image: brooch7, title: "Brooch Work 7" },
+    { id: 23, category: "Brooch Work", image: brooch8, title: "Brooch Work 8" },
+    { id: 24, category: "Brooch Work", image: brooch9, title: "Brooch Work 9" },
+    { id: 25, category: "Brooch Work", image: brooch10, title: "Brooch Work 10" },
+    { id: 26, category: "Brooch Work", image: brooch11, title: "Brooch Work 11" },
     // Fabric Paint
-    { id: 17, category: "Fabric Paint", image: fabric1, title: "Fabric Paint" },
-    { id: 18, category: "Fabric Paint", image: fabric2, title: "Fabric Paint" },
-    { id: 19, category: "Fabric Paint", image: fabric3, title: "Fabric Paint" },
-    { id: 20, category: "Fabric Paint", image: fabric4, title: "Fabric Paint" },
-    { id: 21, category: "Fabric Paint", image: fabric5, title: "Fabric Paint" },
-    { id: 22, category: "Fabric Paint", image: fabric6, title: "Fabric Paint" },
+    { id: 27, category: "Fabric Paint", image: fabric1, title: "Fabric Paint 1" },
+    { id: 28, category: "Fabric Paint", image: fabric2, title: "Fabric Paint 2" },
+    { id: 29, category: "Fabric Paint", image: fabric3, title: "Fabric Paint 3" },
+    { id: 30, category: "Fabric Paint", image: fabric4, title: "Fabric Paint 4" },
+    { id: 31, category: "Fabric Paint", image: fabric5, title: "Fabric Paint 5" },
+    { id: 32, category: "Fabric Paint", image: fabric6, title: "Fabric Paint 6" },
     
 ];
 
@@ -148,7 +148,7 @@ const Works = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <ShoppingBag size={14} style={{ marginRight: '5px' }} /> Order
+                                        <ShoppingBag size={14} style={{ marginRight: '5px' }} /> Order {work.title}
                                     </Button>
                                 </div>
                             </motion.div>
@@ -186,7 +186,7 @@ const Works = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    Order Now
+                                    Order {selectedImage.title}
                                 </Button>
                             </div>
                         </motion.div>
