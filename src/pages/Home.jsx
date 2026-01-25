@@ -88,21 +88,21 @@ const Home = () => {
                             <img src={imageAari} alt="Aari Work" />
                             <div className={styles.categoryOverlay}>
                                 <h3>Aari Work</h3>
-                                <Link to="/works">Explore</Link>
+                                <Link to="/works?category=Aari Work">Explore</Link>
                             </div>
                         </div>
                         <div className={styles.categoryCard} data-aos="zoom-in" data-aos-delay="100">
                             <img src={imageBrooch} alt="Brooch works" />
                             <div className={styles.categoryOverlay}>
                                 <h3>Brooch works</h3>
-                                <Link to="/works">Explore</Link>
+                                <Link to="/works?category=Brooch Work">Explore</Link>
                             </div>
                         </div>
                         <div className={styles.categoryCard} data-aos="zoom-in" data-aos-delay="200">
                             <img src={imageAari1} alt="Fabric Painting" />
                             <div className={styles.categoryOverlay}>
                                 <h3>Frock tailoring</h3>
-                                <Link to="/works">Explore</Link>
+                                <Link to="/works?category=Fabric Paint">Explore</Link>
                             </div>
                         </div>
                     </div>

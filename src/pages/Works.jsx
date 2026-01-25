@@ -80,8 +80,22 @@ const worksData = [
 
 ];
 
+import { useLocation } from 'react-router-dom';
+
 const Works = () => {
-    const [activeCategory, setActiveCategory] = useState("Aari Work");
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const initialCategory = queryParams.get('category') || "Aari Work";
+    const [activeCategory, setActiveCategory] = useState(initialCategory);
+
+    // Update activeCategory if URL changes (optional, but good for back/forward navigation)
+    React.useEffect(() => {
+        const categoryFromUrl = new URLSearchParams(location.search).get('category');
+        if (categoryFromUrl && categories.includes(categoryFromUrl)) {
+            setActiveCategory(categoryFromUrl);
+        }
+    }, [location.search]);
+
     const [selectedImage, setSelectedImage] = useState(null);
 
     const filteredWorks = worksData.filter(work => work.category === activeCategory);
