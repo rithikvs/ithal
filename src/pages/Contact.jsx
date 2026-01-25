@@ -38,15 +38,15 @@ const Contact = () => {
                                 <div className={styles.iconBox}><Phone size={24} /></div>
                                 <div>
                                     <h3>Phone / WhatsApp</h3>
-                                    <p>+91 77085 52461</p>
+                                    <p>+91 9629741825</p>
                                 </div>
                             </div>
 
                             <div className={styles.infoItem}>
                                 <div className={styles.iconBox}><MapPin size={24} /></div>
                                 <div>
-                                    <h3>Visit Boutique</h3>
-                                    <p>123, Fashion Avenue, Boutique City, State - 600000</p>
+
+                                    <p>Aathur pirivu, Amman Nagar, maruthi rice mill opposite, Karur.</p>
                                 </div>
                             </div>
 

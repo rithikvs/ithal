@@ -80,7 +80,7 @@ const Navbar = () => {
                                 ))}
                                 <li>
                                     <a
-                                        href="https://wa.me/917708552461"
+                                        href="https://wa.me/919629741825"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className={styles.mobileBtn}

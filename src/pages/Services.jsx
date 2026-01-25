@@ -10,7 +10,7 @@ import Button from '../components/UI/Button';
 // Helper to generate WhatsApp chat link (mobile-friendly)
 const whatsappLink = (title) => {
     const text = `Hello Ethal Creations, I am interested in this service: ${title}`;
-    return `https://wa.me/917708552461?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/919629741825?text=${encodeURIComponent(text)}`;
 };
 
 const servicesList = [

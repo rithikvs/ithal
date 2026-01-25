@@ -46,3 +46,14 @@
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+
+.dark {
+    background-color: #333;
+    color: #fff;
+    box-shadow: var(--shadow-sm);
+}
+
+.dark:hover {
+    background-color: #000;
+    box-shadow: var(--shadow-md);
+}

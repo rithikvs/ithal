@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className={styles.brandSection}>
                     <h2 className={styles.logo}>Ethal Creations</h2>
                     <p className={styles.tagline}>Handcrafted Elegance in Every Stitch.<br />
-                    <span style={{fontWeight: 500}}>Courier service available to and from your location.</span></p>
+                        <span style={{ fontWeight: 500 }}>Courier service available to and from your location.</span></p>
                     <div className={styles.socials}>
                         <a href="https://www.instagram.com/ethalya_rubini/" className={styles.socialIcon} target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
                     </div>
@@ -35,13 +35,13 @@ const Footer = () => {
                     <h3>Contact Us</h3>
                     <ul>
                         <li>
-                            <Phone size={16} /> <span>+91 77085 52461</span>
+                            <Phone size={16} /> <span>+91 9629741825</span>
                         </li>
                         <li>
                             <Mail size={16} /> <span>indhugopi2007@gmail.com</span>
                         </li>
                         <li>
-                            <MapPin size={16} /> <span>123, Boutique Street, Fashion City.</span>
+                            <MapPin size={16} /> <span>Aathur pirivu, Amman Nagar, maruthi rice mill opposite, Karur.</span>
                         </li>
                     </ul>
                 </div>

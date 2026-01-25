@@ -77,7 +77,7 @@ const worksData = [
     { id: 30, category: "Fabric Paint", image: fabric4, title: "Fabric Paint 4" },
     { id: 31, category: "Fabric Paint", image: fabric5, title: "Fabric Paint 5" },
     { id: 32, category: "Fabric Paint", image: fabric6, title: "Fabric Paint 6" },
-    
+
 ];
 
 const Works = () => {
@@ -88,7 +88,7 @@ const Works = () => {
 
     const whatsappLink = (title) => {
         const text = `Hello Ethal Creations, I am interested in this design: ${title}`;
-        return `https://wa.me/917708552461?text=${encodeURIComponent(text)}`;
+        return `https://wa.me/919629741825?text=${encodeURIComponent(text)}`;
     };
 
     return (
@@ -180,7 +180,7 @@ const Works = () => {
                             <img src={selectedImage.image} alt={selectedImage.title} />
                             <div className={styles.lightboxDetails}>
                                 <h2>{selectedImage.title}</h2>
-                                <Button 
+                                <Button
                                     variant="primary"
                                     href={whatsappLink(selectedImage.title)}
                                     target="_blank"

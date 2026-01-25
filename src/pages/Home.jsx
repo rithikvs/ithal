@@ -9,12 +9,23 @@ import logoImg from '../assets/images/logo.jpg';
 import imageAari from '../assets/images/aari.jpg';
 import imageBrooch from '../assets/images/brooch.jpg';
 import imageAari1 from '../assets/images/fabric/4.jpg';
+import heroVideo from '../assets/videos/hero.mp4';
 
 const Home = () => {
     return (
         <div className={styles.home}>
             {/* Hero Section */}
             <section className={styles.hero}>
+                <video
+                    className={styles.heroVideo}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                >
+                    <source src={heroVideo} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <div className={styles.heroOverlay}></div>
                 <div className={`container ${styles.heroContent}`}>
                     <motion.h1
@@ -104,8 +115,8 @@ const Home = () => {
                     <h2>Ready to design your dream outfit?</h2>
                     <p>Contact us via WhatsApp to share your ideas and get a quote.</p>
                     <Button
-                        variant="primary"
-                        href="https://wa.me/917708552461"
+                        variant="dark"
+                        href="https://wa.me/919629741825"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
