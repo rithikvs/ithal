@@ -101,7 +101,7 @@ const Home = () => {
                         <div className={styles.categoryCard} data-aos="zoom-in" data-aos-delay="200">
                             <img src={imageAari1} alt="Fabric Painting" />
                             <div className={styles.categoryOverlay}>
-                                <h3>Frock tailoring</h3>
+                                <h3>Fabric painting</h3>
                                 <Link to="/works?category=Fabric Paint">Explore</Link>
                             </div>
                         </div>
